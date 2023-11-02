@@ -46,7 +46,7 @@ function MenuLavera() {
                                   lg: "block",
                                   md: "flex",
                                   sm: "flex",
-                                  xs: "flex",
+                                  xs: "block",
                               },
                               textAlign: {
                                   lg: "center",
