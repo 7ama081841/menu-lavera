@@ -1,9 +1,12 @@
 import "./App.css";
-import { Box } from "@mui/material";
+import { Box, Button } from "@mui/material";
 import MenuLavera from "./components/MenuLavera";
 import Foutter from "./components/Foutter";
+import { useState } from "react";
 
 function App() {
+    const [category, setCategory] = useState("all");
+
     return (
         <Box className="App">
             <Box
@@ -31,7 +34,69 @@ function App() {
                         marginTop: "20px",
                     }}
                 ></Box>
-                <p> Burger | Sandwsch | Pie | Coffee </p>
+                <p>
+                    <Button
+                        sx={{
+                            ":hover": {
+                                background: "#4dabf5",
+                                color: "#fff",
+                            },
+                        }}
+                        onClick={() => setCategory("all")}
+                    >
+                        {" "}
+                        all{" "}
+                    </Button>
+                    <Button
+                        sx={{
+                            ":hover": {
+                                background: "#4dabf5",
+                                color: "#fff",
+                            },
+                        }}
+                        onClick={() => setCategory("cheesecake")}
+                    >
+                        cheesecake
+                    </Button>
+
+                    <Button
+                        sx={{
+                            ":hover": {
+                                background: "#4dabf5",
+                                color: "#fff",
+                            },
+                        }}
+                        onClick={() => setCategory("gauffre")}
+                    >
+                        gauffre
+                    </Button>
+
+                    <Button
+                        sx={{
+                            ":hover": {
+                                background: "#4dabf5",
+                                color: "#fff",
+                            },
+                        }}
+                        onClick={() => setCategory("pizza")}
+                    >
+                        {" "}
+                        pizza{" "}
+                    </Button>
+
+                    <Button
+                        sx={{
+                            ":hover": {
+                                background: "#4dabf5",
+                                color: "#fff",
+                            },
+                        }}
+                        onClick={() => setCategory("coffee")}
+                    >
+                        {" "}
+                        Coffee
+                    </Button>
+                </p>
             </Box>
             <Box
                 sx={{
@@ -42,7 +107,7 @@ function App() {
                     },
                 }}
             >
-                <MenuLavera />
+                <MenuLavera category={category} />
                 <Foutter />
             </Box>
         </Box>
