@@ -14,11 +14,6 @@ function App() {
         const buttonText = e.currentTarget.innerText;
         setCategory(buttonText);
         console.log(buttonText);
-
-        if (buttonText === category) {
-            console.log("jawek behi");
-            e.target.style.background = "#4dabf5";
-        }
     };
 
     return (
