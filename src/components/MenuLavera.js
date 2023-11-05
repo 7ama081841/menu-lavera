@@ -69,7 +69,7 @@ function MenuLavera({ category }) {
                                   },
                                   flexDirection: "row-reverse",
                                   pading: "0 20px",
-                                  marginBottom: "20px",
+                                  marginBottom: "50px",
                               }}
                           >
                               <div className="image">
@@ -140,7 +140,6 @@ function MenuLavera({ category }) {
                 : null}
             <Box
                 sx={{
-                    // marginTop: "70px",
                     width: "100%",
                     display: {
                         lg: "none",
@@ -184,10 +183,10 @@ function MenuLavera({ category }) {
                     style={{
                         fontWeight: "bold",
                         fontSize: "71px",
-                        margin: "0",
+                        marginTop: "40px",
                     }}
                 >
-                    58 129 031{" "}
+                    58 129 031
                 </p>
             </Box>
         </Box>

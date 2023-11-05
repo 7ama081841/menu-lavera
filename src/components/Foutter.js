@@ -202,7 +202,7 @@ function Foutter() {
                             style={{
                                 fontWeight: "bold",
                                 fontSize: "71px",
-                                margin: "0",
+                                marginTop: "40px",
                             }}
                         >
                             58 129 031
