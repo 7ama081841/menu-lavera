@@ -8,12 +8,9 @@ import data from "./data";
 function App() {
     const [category, setCategory] = useState("ALL");
 
-    useEffect(() => {}, [category]);
-
     const handleButtonClick = (e) => {
         const buttonText = e.currentTarget.innerText;
         setCategory(buttonText);
-        console.log(buttonText);
     };
 
     return (
