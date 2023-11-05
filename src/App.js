@@ -2,10 +2,24 @@ import "./App.css";
 import { Box, Button } from "@mui/material";
 import MenuLavera from "./components/MenuLavera";
 import Foutter from "./components/Foutter";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import data from "./data";
 
 function App() {
-    const [category, setCategory] = useState("all");
+    const [category, setCategory] = useState("ALL");
+
+    useEffect(() => {}, [category]);
+
+    const handleButtonClick = (e) => {
+        const buttonText = e.currentTarget.innerText;
+        setCategory(buttonText);
+        console.log(buttonText);
+
+        if (buttonText === category) {
+            console.log("jawek behi");
+            e.target.style.background = "#4dabf5";
+        }
+    };
 
     return (
         <Box className="App">
@@ -41,11 +55,13 @@ function App() {
                                 background: "#4dabf5",
                                 color: "#fff",
                             },
+                            backgroundColor:
+                                category === "ALL" ? "#4dabf5" : "",
+                            color: category === "ALL" ? "#fff" : "",
                         }}
-                        onClick={() => setCategory("all")}
+                        onClick={handleButtonClick}
                     >
-                        {" "}
-                        all{" "}
+                        all
                     </Button>
                     <Button
                         sx={{
@@ -53,8 +69,11 @@ function App() {
                                 background: "#4dabf5",
                                 color: "#fff",
                             },
+                            backgroundColor:
+                                category === "CHEESECAKE" ? "#4dabf5" : "",
+                            color: category === "CHEESECAKE" ? "#fff" : "",
                         }}
-                        onClick={() => setCategory("cheesecake")}
+                        onClick={handleButtonClick}
                     >
                         cheesecake
                     </Button>
@@ -65,8 +84,11 @@ function App() {
                                 background: "#4dabf5",
                                 color: "#fff",
                             },
+                            backgroundColor:
+                                category === "GAUFFRE" ? "#4dabf5" : "",
+                            color: category === "GAUFFRE" ? "#fff" : "",
                         }}
-                        onClick={() => setCategory("gauffre")}
+                        onClick={handleButtonClick}
                     >
                         gauffre
                     </Button>
@@ -77,11 +99,13 @@ function App() {
                                 background: "#4dabf5",
                                 color: "#fff",
                             },
+                            backgroundColor:
+                                category === "PIZZA" ? "#4dabf5" : "",
+                            color: category === "PIZZA" ? "#fff" : "",
                         }}
-                        onClick={() => setCategory("pizza")}
+                        onClick={handleButtonClick}
                     >
-                        {" "}
-                        pizza{" "}
+                        pizza
                     </Button>
 
                     <Button
@@ -90,10 +114,12 @@ function App() {
                                 background: "#4dabf5",
                                 color: "#fff",
                             },
+                            backgroundColor:
+                                category === "COFFEE" ? "#4dabf5" : "",
+                            color: category === "COFFEE" ? "#fff" : "",
                         }}
-                        onClick={() => setCategory("coffee")}
+                        onClick={handleButtonClick}
                     >
-                        {" "}
                         Coffee
                     </Button>
                 </p>

@@ -10,8 +10,8 @@ const data = [
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus auctor metus non ante commodo, ut bibendum nulla aliquet. Integer sit amet condimentum odio. Maecenas posuere euismod quam, sit amet elementum elit euismod eu. In non tincidunt ipsum.",
         price: 3.5,
         image: coffee,
-        category: "coffee",
-        many: "all",
+        category: "COFFEE",
+        many: "ALL",
     },
     {
         name: "pizza",
@@ -19,8 +19,8 @@ const data = [
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus auctor metus non ante commodo, ut bibendum nulla aliquet. Integer sit amet condimentum odio. Maecenas posuere euismod quam, sit amet elementum elit euismod eu. In non tincidunt ipsum.",
         price: 15,
         image: pizza,
-        category: "pizza",
-        many: "all",
+        category: "PIZZA",
+        many: "ALL",
     },
     {
         name: "gauffre",
@@ -28,8 +28,8 @@ const data = [
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus auctor metus non ante commodo, ut bibendum nulla aliquet. Integer sit amet condimentum odio. Maecenas posuere euismod quam, sit amet elementum elit euismod eu. In non tincidunt ipsum.",
         price: 12.7,
         image: gauffre,
-        category: "gauffre",
-        many: "all",
+        category: "GAUFFRE",
+        many: "ALL",
     },
     {
         name: "cheesecake",
@@ -37,8 +37,8 @@ const data = [
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus auctor metus non ante commodo, ut bibendum nulla aliquet. Integer sit amet condimentum odio. Maecenas posuere euismod quam, sit amet elementum elit euismod eu. In non tincidunt ipsum.",
         price: 18.6,
         image: cheesecake,
-        category: "cheesecake",
-        many: "all",
+        category: "CHEESECAKE",
+        many: "ALL",
     },
 ];
 

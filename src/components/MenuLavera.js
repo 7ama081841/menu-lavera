@@ -3,15 +3,6 @@ import React from "react";
 import data from "../data";
 
 function MenuLavera({ category }) {
-    console.log(
-        data
-            .filter(
-                (item) => item.category === category || item.many === category
-            )
-            .map((item) => item)
-    );
-    console.log(category);
-
     return (
         <Box
             className="cards"
